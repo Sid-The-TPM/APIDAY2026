@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0e27;
+  color: #e0e0e0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1f3a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00d4ff;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #39ff14;
+}
+
+/* Neon text glow effect */
+.neon-glow {
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.8), 0 0 20px rgba(0, 212, 255, 0.5);
+}
+
+.neon-glow-green {
+  text-shadow: 0 0 10px rgba(57, 255, 20, 0.8), 0 0 20px rgba(57, 255, 20, 0.5);
+}
+
+.neon-glow-purple {
+  text-shadow: 0 0 10px rgba(217, 70, 239, 0.8), 0 0 20px rgba(217, 70, 239, 0.5);
+}
+
+.neon-glow-red {
+  text-shadow: 0 0 10px rgba(255, 0, 110, 0.8), 0 0 20px rgba(255, 0, 110, 0.5);
+}
+
+/* Status indicators */
+.status-healthy {
+  color: #39ff14;
+  box-shadow: 0 0 10px rgba(57, 255, 20, 0.6);
+}
+
+.status-degraded {
+  color: #ff8c00;
+  box-shadow: 0 0 10px rgba(255, 140, 0, 0.6);
+}
+
+.status-critical {
+  color: #ff006e;
+  box-shadow: 0 0 10px rgba(255, 0, 110, 0.6);
+}
+
+.status-offline {
+  color: #808080;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.3);
+}
