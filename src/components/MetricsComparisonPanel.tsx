@@ -67,7 +67,7 @@ export function MetricsComparisonPanel() {
       </h3>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-        {comparisons && comparisons.mapp((comp) => {
+        {comparisons && comparisons.map((comp) => {
           const diff = typeof comp.after === 'number'
             ? comp.after - parseFloat(String(comp.before))
             : 0;
